@@ -230,7 +230,8 @@ scp -v -i ~/.ssh/id_rsa -r ubuntu@107.21.46.98:/home/ubuntu/DriveBy  /home/chrix
 vim ~/.vimrc
 
 
-
+#how to connect to aws ec2 instance 
+ssh -i /path/to/your-key.pem ubuntu@your-instance-public-dns
 
 set mouse=a
 set clipboard=unnamedplus
@@ -305,3 +306,12 @@ ALLOWED_HOSTS = ['www.api.driveby.chrixsaintworld.tech', 'api.driveby.chrixsaint
 #to restart vscode in other to update the latest dependency that you installed 
 #you can click control shift plus: Restart TS Server
 Restart TS Server
+
+#
+cd /var/www/html #navigate to the default nginx web directory
+
+wget https://github.com/azeezsalu/techmax/archive/refs/heads/main.zi #download the zip file from the github repo
+unzip main.zip #unzip the downloaded file
+
+cp -r techmax-main/* /var/www/html/ #copy the contents of the extracted folder to the default nginx web directory
+
