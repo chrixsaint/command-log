@@ -1,0 +1,307 @@
+ npx express-generator
+express --view=pug myapp
+express
+cd to myapp and run = npm install
+
+
+
+
+npm init: Creates a package.json for the Node.js project.
+
+npm install --save express sequelize body-parser mysql2 
+
+intplus-tech hotel-booking-platform
+
+sequelize db:migrate
+
+npm install twilio --save
+
+npm install --save bcryptjs jsonwebtoken
+
+npm i fastest-validator
+
+npm install --save express: Installs Express.js and updates package-lock.json and node_modules.
+
+npm install --save sequelize: Installs Sequelize ORM for relational databases.
+
+sequelize init: Initializes Sequelize project structure (config, models, seeders, migrations).
+
+npm install --save mysql2: Installs MySQL client for connecting and interacting with MySQL in Node.js
+
+sequelize model:generate --name Comment --attributes content:text,postId:integer,UserId:integer,cat
+egoryId:integer,userId:integer
+
+sequelize model:generate --name User --attributes name:string,email:string,password:string
+
+sequelize db:migrate 
+
+
+#to search for folders in the system
+sudo find / -type d -name "pgadmin4" 
+
+#Regularly update your software packages to ensure you have 
+#the latest security patches and bug fixes
+sudo apt update -y && sudo apt upgrade -y
+
+
+#Remove packages that are no longer needed to free up disk space
+sudo apt autoremove
+
+#Clear the package cache to free up additional disk space.
+sudo apt clean
+
+#Remove temporary files that are no longer needed.
+sudo apt autoclean
+
+sudo ln -s /etc/nginx/sites-available/phpmyadmin.conf /etc/nginx/sites-enabled/ #create a symbolic link for the phpmyadmin configuration file
+sudo ln -s /etc/phpmyadmin/nginx.conf /etc/nginx/sites-enabled/phpmyadmin #create a symbolic link for the phpmyadmin configuration file
+sudo rm /etc/nginx/sites-enabled/phpmyadmin.conf #remove the symbolic link for the phpmyadmin configuration file
+
+# install PostgreSQL on your Ubuntu system with the following commands
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo service postgresql start #start the PostgreSQL service
+sudo service postgresql status #check the status of the PostgreSQL service
+
+
+//Run the following command to stop the Apache service
+
+# to access any link that is configured on apache2 make sure you use 
+localhost:8080/yourlink
+#install apache2
+sudo apt install apache2
+sudo systemctl stop apache2
+sudo systemctl start apache2
+sudo systemctl status apache2
+sudo systemctl restart apache2
+
+
+# to access any link that is configured on apache2 make sure you use 
+localhost:80/yourlink or you can use localhost:/yourlink since it is the default port for web http server
+sudo systemctl start nginx
+sudo systemctl status nginx
+sudo systemctl stop nginx
+sudo systemctl restart nginx
+
+
+git checkout master //ensure you are on the master branch
+//Once you are on the main branch, you can create a new branch named "app-server" using the following command:
+git checkout -b chrixsaint
+//To verify that the new branch has been created successfully, you can run:
+git branch
+//to switch to any branch
+git checkout branchname
+
+storage_get_counts v3
+
+chrixsaint-server v2
+
+app-servers v4
+
+
+# Find the process using port 8000
+lsof -i :8000
+
+# The output will look something like this:
+# COMMAND  PID     USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+# node    1234 username   10u  IPv6  12345      0t0  TCP *:8000 (LISTEN)
+
+# Kill the process by its PID
+kill -9 1234
+
+//install flask
+pip3 install flask
+
+
+server {
+    listen 80 default_server;
+    listen [::]: 80 default_server;
+
+    #Use IP of server as domain name
+    server_name 107.21.46.98
+
+    # Customize HTTP response header
+    add_header X-Served-By 502828-web-01;
+
+    # Serve /airbnb-onepage/ route on AirBnB_clone_v3
+    location = /airbnb-onepage/ {
+        proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
+    }
+
+    error page 404 /404.html;
+    location/404 {
+        root /var/www/html;
+    internal;
+    }
+}
+
+
+# Try using a different npm registry
+npm config set registry https://registry.yarnpkg.com/
+
+Clear the npm cache:
+npm cache clean --force
+
+# install globally
+npm install -g passport-local
+
+# Disable proxy:
+npm config rm proxy
+npm config rm https-proxy
+
+# Switch back to the default npm registry:
+npm config set registry https://registry.npmjs.org/
+
+const crypto = require('crypto');
+
+// Generate a random secret key
+const secretKey = crypto.randomBytes(32).toString('hex');
+console.log('Secret Key:', secretKey);
+
+
+const crypto = require('crypto');
+
+// Generate a random session secret
+const generateSessionSecret = () => {
+  return crypto.randomBytes(32).toString('hex');
+};
+
+
+
+// Usage
+const sessionSecret = generateSessionSecret();
+console.log('Generated Session Secret:', sessionSecret);
+
+#how to create a virtual enviroment 
+python3 -m venv test
+
+#how to activate a virtual enviroment
+source test/bin/activate
+
+#how to deactivate a virtual enviroment
+source test/bin/deactivate
+
+#install all this depencdencies in the virtual enviroment
+pip install django
+pip install djangorestframework
+pip install django-cors-headers
+pip install djangorestframework-simplejwt
+pip install Pillow
+
+python manage.py runserver #run the Django development server
+
+
+
+//to get my ssh key
+ssh-keygen
+//copy public key
+cat ~/.ssh/id_rsa.pub
+
+.ssh/authorized_keys
+.ssh/auth*
+ssh ubuntu@107.21.46.98
+ssh ubuntu@35.174.184.101
+
+//my linux ip address
+172.25.183.82
+
+//transfer files from local to server
+scp -r chrix ubuntu@35.174.184.101:/home/ubuntu
+
+#transfer files from web-02  to a specific .ssh key in your server
+scp -i ~/.ssh/id_rsa -r pamltree ubuntu@35.174.184.101:/home/ubuntu
+#my web-01 server ip address
+scp -i ~/.ssh/id_rsa -r dist ubuntu@107.21.46.98:/home/ubuntu
+#how to transfer from my local laptop to other remote server 
+scp -i ~/.ssh/id_rsa -r mkion ubuntu@172.25.183.82:/home/chrixsaint 
+
+#when you have a virtual private server and you want to transfer files from your
+#remote server to your local machine you have to first add the id_rsa.pub key to the authorised key in the remote server
+#then you can transfer files from the remote server to your local machine
+ssh -i ~/.ssh/id_rsa ubuntu@35.174.184.101
+
+#this is the command to transfer files from the remote server to your local machine
+#but make sure you are in the local machine directory where you want to transfer the files to
+#before you run the command
+scp -v -i ~/.ssh/id_rsa -r ubuntu@107.21.46.98:/home/ubuntu/DriveBy  /home/chrixsaint
+
+
+
+vim ~/.vimrc
+
+
+
+
+set mouse=a
+set clipboard=unnamedplus
+set number
+set smartindent
+set autoindent
+set tabstop=8 shiftwidth=8 expandtab
+set colorcolumn=80
+syntax enable
+set cindent                         
+
+fab -f 3-deploy_web_static.py deploy -i -/.ssh/id_rsa -u ubuntu
+ curl -si www.chrixsaintworld.tech
+
+# You can use an SSH agent to cache your passphrase so that you only need to enter it once per session. If you're on Linux,
+eval $(ssh-agent)
+#Then add your SSH key to the agent:
+ssh-add /home/chrixsaint/.ssh/id_rsa
+
+ssh-add /home/ubuntu/.ssh/id_rsa
+#To delete a branch locally and on your GitHub repository, you can use the following commands:
+git checkout main
+git branch -d branch_name
+git push origin :branch_name
+
+# to create a new branch
+git checkout -b branch_name
+
+
+sudo service postgresql start #start the PostgreSQL service
+sudo su - postgres #switch to the postgres user
+psql #open the PostgreSQL command-line interface
+\l #list all databases
+\du #list all users
+\q #exit the PostgreSQL command-line interface
+exit #exit the postgres user
+CREATE USER christian WITH PASSWORD 'petchrix1'; #create a new user
+CREATE DATABASE storefront OWNER christian; #create a new database
+GRANT ALL PRIVILEGES ON DATABASE storefront TO christian; #grant privileges to the user
+ALTER USER your_username WITH SUPERUSER; #grant superuser privileges to the user
+
+#To install the PostgreSQL client on your Ubuntu system, you can use the following command:
+sudo apt install postgresql-client
+
+sudo systemctl restart pgadmin4 #restart the pgAdmin4 service
+
+#we have to navigate to the backend project directory and run the following command to create a new Django app named "api":
+gunicorn --workers 3 --bind unix:/home/ubuntu/DriveBy/backend.sock backend.wsgi:application
+
+gunicorn --workers 3 --bind unix:/home/ubuntu/DriveBy/backend/backend.sock backend.wsgi:application
+
+systemctl status pgadmin4 #check pgadmin status
+
+ sudo netstat -tuln # check if port is open
+ dpkg -l | grep pgadmin4 # how to check if pgadmin is installed
+#To completely remove pgAdmin4 and its related packages from your Ubuntu system, you can use the following commands:
+sudo apt remove --purge pgadmin4 pgadmin4-apache2
+sudo apt autoremove
+sudo apt autoclean
+sudo systemctl daemon-reload
+sudo systemctl reset-failed
+sudo rm -rf /var/lib/pgadmin /etc/pgadmin /usr/pgadmin4
+
+# how to install pgadmin4 on ubuntu to access it on the web browser
+sudo apt update
+sudo apt install pgadmin4 pgadmin4-apache2
+sudo /usr/pgadmin4/bin/setup-web.sh
+
+api.driveby.chrixsaintworld.tech www.api.driveby.chrixsaintworld.tech
+ALLOWED_HOSTS = ['www.api.driveby.chrixsaintworld.tech', 'api.driveby.chrixsaintworld.tech', '107.21.46.98']
+
+#to restart vscode in other to update the latest dependency that you installed 
+#you can click control shift plus: Restart TS Server
+Restart TS Server
