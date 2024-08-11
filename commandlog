@@ -113,6 +113,8 @@ kill -9 1234
 pip3 install flask
 
 
+https://ipapi.co/json #get the ip address of the server
+
 server {
     listen 80 default_server;
     listen [::]: 80 default_server;
@@ -231,7 +233,7 @@ vim ~/.vimrc
 
 
 #how to connect to aws ec2 instance 
-ssh -i /path/to/your-key.pem ubuntu@your-instance-public-dns
+ssh -i chkpair.pem ubuntu@54.242.163.88
 
 set mouse=a
 set clipboard=unnamedplus
@@ -315,3 +317,39 @@ unzip main.zip #unzip the downloaded file
 
 cp -r techmax-main/* /var/www/html/ #copy the contents of the extracted folder to the default nginx web directory
 
+https://nodejs.org/docs/latest/api/fs.html#file-system #nodejs file system documentation
+https://www.npmjs.com/ #npm documentation
+https://expressjs.com/en/starter/installing.html #express documentation
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status #http status codes
+https://wheretheiss.at/w/developer #iss api documentation
+https://bored-api.appbrewery.com/ #bored api documentation
+https://jsonviewer.stack.hu/  #json viewer
+https://github.com/saifaustcse/api-best-practices?tab=readme-ov-file#9-do-not-use-verbs-in-the-uri #api best practices
+https://restfulapi.net/resource-naming/ #api best practices
+https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html #error http best practice
+https://ui.shadcn.com/docs #shadcn docs
+
+
+
+
+
+git remote add upstream git@github.com:hngprojects/hng_boilerplate_expressjs.git #add the upstream remote repository
+git remote remove upstream #
+git remote -v #check the remote repositories
+git fetch upstream #fetch the upstream repository
+git merge upstream/dev #merge the upstream repository with the local repository
+
+
+
+
+################################################################################################
+#laravel logs
+composer install #install the composer dependencies
+php artisan key:generate #generate a new application key
+php artisan serve #start the Laravel development server
+php artisan migrate
+php artisan db:seed --class=CategoriesTableSeeder
+ 
+
+
+npx tsc
