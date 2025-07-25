@@ -1,0 +1,5 @@
+sudo mysql -u root -p # Log in to MySQL as root user
+CREATE DATABASE mentorship_db; #Create a new database named mentorship_db
+CREATE USER 'mentor_user'@'localhost' IDENTIFIED BY 'supersecure123'; #Create a new user mentor_user with a password
+GRANT ALL PRIVILEGES ON mentorship_db.* TO 'mentor_user'@'localhost'; #Grant all privileges on the mentorship_db to mentor_user
+FLUSH PRIVILEGES; #Reload the privileges to ensure that the changes take effect

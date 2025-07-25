@@ -353,3 +353,12 @@ php artisan db:seed --class=CategoriesTableSeeder
 
 
 npx tsc
+
+https://storefront-api-team.postman.co/workspace/StoreFront-API-Team-Workspace~f0d8d862-a229-4992-8359-8e9cd7f8af3e/example/36015944-eb8c2aaa-aa82-4f3b-ae41-c31eda423726
+
+
+# Run this in PowerShell or Command Prompt (not inside WSL) to fully shut down all running WSL instances.
+# Useful for fixing stuck processes, resetting environments, or resolving VS Code WSL connection issues.
+wsl --shutdown
+
+sudo mysql -u root -p # Log in to MySQL as root user
