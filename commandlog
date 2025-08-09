@@ -4,6 +4,7 @@ express
 cd to myapp and run = npm install
 
 
+npx sequelize-cli db:migrate 
 
 
 npm init: Creates a package.json for the Node.js project.
