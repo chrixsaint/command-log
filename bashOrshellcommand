@@ -1,0 +1,2 @@
+vim ~/.bashrc to open the bashrc
+source ~/.bashrc to load the bashrc

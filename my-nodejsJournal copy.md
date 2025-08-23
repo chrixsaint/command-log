@@ -153,3 +153,22 @@ The Balance table is the child table and references Personal.userUid as a foreig
 Foreign keys are always defined on the child table (Balance), not the parent.
 
 ✅ Therefore, you only add the foreign key configuration in the Balance migration (which we already updated).
+
+
+## things to know about input/output using async/await
+### Input vs Output (I/O)
+
+- **Input (data coming into your app)**
+  - Incoming HTTP request data: `req.body`, `req.params`, `req.query`
+  - Reading from DB: `await User.findByPk(id)` (receiving rows)
+  - Reading files: `await fs.readFile(path)`
+  - Getting external API response: `await fetch(url)` then `await res.json()`
+
+- **Output (data your app sends out)**
+  - Sending HTTP response: `res.json()`, `res.send()`, `res.status(...).send()`
+  - Writing to DB: `await User.create()`, `await User.update()`, `await Transaction.destroy()`
+  - Writing files: `await fs.writeFile(path, data)`
+  - Sending external API request: `await fetch(url)` (the request send)
+
+- **Both directions**
+  - Most ops are request/response pairs (DB queries, HTTP calls): send (output) then receive (input). Use `async/await` with `try/catch`.

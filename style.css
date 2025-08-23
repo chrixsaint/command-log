@@ -1,0 +1,15 @@
+.box {
+    width: 300px;
+    /* Content width */
+    padding: 20px;
+    /* Space inside */
+    border: 2px solid #333;
+    /* Border */
+    margin: 10px;
+    /* Space outside */
+    box-sizing: border-box;
+    /* Width includes padding and border */
+    color: aquamarine;
+    position: relative;
+
+}

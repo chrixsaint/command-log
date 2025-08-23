@@ -1,6 +1,32 @@
+Constraints: Use very simple language with analogies if possible, avoid jargon unless explained.
 
+I’m learning JavaScript deeply and want to build a strong understanding of how its building blocks fit together.
+
+Task/Goal: Explain this code to me as if I’m learning to identify JavaScript parts by name (variable, function, object, class, parameter, property, method, etc.).  
+For every part, tell me:
+
+- What it is called in JavaScript terms
+- Why developers use it and its role/purpose in this code
+- When we typically use it in real projects
+
+Output:
+
+1. Tell me what the code does overall (big picture).
+2. Line-by-line:
+   - Label each element (variable, object, function, etc.)
+   - Explain what its name means
+   - Explain why/when we use that kind of element
+3. How the pieces work together (data flow and logic flow).
+4. Highlight hidden concepts (scope, async, event listeners, etc.) and explain them simply.
+5. End with a real-life analogy and a mini “when to use this” recap.
 folder structure for my backend
 
+
+
+
+
+
+skip the section below 
 christianproject
 christianproject/src
 christianproject/src/config
